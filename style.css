@@ -127,3 +127,37 @@ li{
     85% {margin-left:-40%;}
     100% {margin-left:0;}
 } */
+
+.section{
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.section__container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#cake{
+    margin: 40px;
+}
+
+.cake__menu{
+    display: flex;
+    margin: 32px 0;
+}
+
+.cake__explanation__img{
+    width: 400px;
+    height: 400px;
+}
+
+.cake__explanation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    font-size: 42px;
+}
