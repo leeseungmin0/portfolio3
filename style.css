@@ -8,6 +8,7 @@
 :root {
     --color-chocolate: #D2691E;
     --color-peru: #CD853F;
+    --color-tan: #D2B48C;
     --color-black: #000000;
     --color-white: 	#FFFFFF;
 
@@ -23,7 +24,7 @@ li{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 26px;
+    padding: 24px 0;
 }
 
 .navbar__logo{
@@ -32,6 +33,7 @@ li{
 
 .navbar__menu{
     display: flex;
+    
 }
 
 .navbar__menu li {
@@ -41,6 +43,7 @@ li{
     border-radius: 5px;
     cursor: pointer;
     position: relative;
+    
 }
 
 .navbar__menu li::after{
@@ -57,12 +60,70 @@ li{
 }
 
 .search{
+    height: 24px;
+    background-color: yellow;
+    position: relative;
+    left: 34px;
+}
+
+.search::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 30px;
+    background-color: black;
+    
+}
+
+.navbar i {
     font-size: 24px;
 }
 
+
 .search input{
-    width: 140px;
-    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 24px;
 }
 
+#home {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    /* background: url(/img/home_backg.jpeg) center/cover no-repeat; */
+    background-size: 85%;
+    background-color: var(--color-tan);
+}
 
+.home__container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.home__slide {
+    margin: 0 12px;
+    padding: 0 10px;
+    display: flex;
+    overflow: hidden;
+    animation: slide 10s infinite;
+}
+.home__slide img{
+    width: 200px;
+    height: 300px;
+    
+}
+
+/* @keyframes slide {
+    0% {margin-left:0;} 
+    10% {margin-left:0;} 
+    25% {margin-left:-20%;} 
+    35% {margin-left:-20%;}
+    50% {margin-left:-30%;}
+    60% {margin-left:-30%;}
+    75% {margin-left:-40%;}
+    85% {margin-left:-40%;}
+    100% {margin-left:0;}
+} */
