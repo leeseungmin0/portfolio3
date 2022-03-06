@@ -13,6 +13,13 @@ let searchInput = document.querySelector('.search__input');
 let searchIcon = document.querySelector('.search__i');
 let searchshow = true;
 
+
+// 동근란 버튼
+
+let page = document.querySelectorAll(".page span");
+let pageCount = page.length;
+
+
 searchIcon.addEventListener('click',()=>{
     if(searchshow){
         searchInput.classList.add('show')
@@ -64,4 +71,15 @@ container.addEventListener('mouseleave',()=>{
     autoSlide();
 })
 
+
+// page
+for(let i=0; i<pageCount; i++){
+    page[i].addEventListener('click',(e)=>{
+        moveSlide(i)
+        if(e.target === page[i]) e.target.classList.add('active');
+        else e.target.classList.remove('active');
+        
+        
+    })
+}
 

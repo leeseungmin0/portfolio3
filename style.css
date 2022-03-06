@@ -161,6 +161,9 @@ li {
   text-indent: -9999em;
   margin: 0 5px;
 }
+.page span.active {
+  background-color: #333;
+}
 
 .section {
   margin: auto;
