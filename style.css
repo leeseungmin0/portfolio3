@@ -110,6 +110,7 @@ li{
     width: 100%;
     height: 100%;
     float: left;
+    transition: left .3s ease-in;
 }
 
 .home__slide {

@@ -32,6 +32,6 @@ rightBtn.addEventListener('click',()=>{
 setInterval(()=>{
     let nextIdx = (currentIdx+1)%count;
     moveSlide(nextIdx)
-},3000)
+},4000)
 
 
