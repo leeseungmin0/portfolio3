@@ -7,6 +7,7 @@ let count = slide.length;
 let currentIdx = 0;
 let leftBtn = document.querySelector('.left__btn')
 let rightBtn = document.querySelector('.right__btn')
+let picInterval=undefined;
 for(let i=0; i<count; i++){
     slide[i].style.left = i*100 +"%"
     
@@ -29,9 +30,19 @@ rightBtn.addEventListener('click',()=>{
     
 })
 
-setInterval(()=>{
-    let nextIdx = (currentIdx+1)%count;
-    moveSlide(nextIdx)
-},4000)
+function autoSlide(){
+    picInterval= setInterval(()=>{
+        let nextIdx = (currentIdx+1)%count;
+        moveSlide(nextIdx)
+        
+    },4000)
+}
+
+container.addEventListener('mouseenter',()=>{
+    clearInterval(picInterval)
+})
+container.addEventListener('mouseleave',()=>{
+    autoSlide();
+})
 
 
