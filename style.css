@@ -88,12 +88,15 @@ li{
 }
 
 
-.search input{
+.search__input{
     border: none;
     outline: none;
     font-size: 24px;
 }
 
+.search__input .hidden{
+    display: none;
+}
 #home {
     width: 100%;
     height: 700px;
@@ -192,8 +195,8 @@ li{
 }
 
 .cake__explanation__img{
-    width: 100vw;
-    height: 100vw;
+    width: 100%;
+    height: 10%;
 }
 
 .cake__explanation{
