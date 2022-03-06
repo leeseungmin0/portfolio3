@@ -99,8 +99,8 @@ li{
     height: 700px;
     text-align: center;
     /* background: url(/img/home_backg.jpeg) center/cover no-repeat; */
-    background-size: 85%;
     background-color: var(--color-tan);
+    
 }
 
 .home__container{
@@ -109,6 +109,7 @@ li{
     align-items: center;
     width: 100%;
     height: 100%;
+    left: 0;
     float: left;
     transition: left .3s ease-in;
 }
@@ -124,9 +125,47 @@ li{
 .home__slide img{
     width: 800px;
     height: 600px;
-    
 }
 
+/* home slide btn */
+.slide__btn{
+    position: relative;
+    font-size: 62px;
+    cursor: pointer;
+}
+
+.left__btn,
+.right__btn{
+    position: absolute;
+}
+
+.left__btn{
+    top: 320px;
+    left: 170px;
+}
+
+.right__btn{
+    top: 320px;
+    right: 170px;
+}
+
+.page{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+.page span{
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    text-indent: -9999em;
+    margin: 0 5px;
+}
 
 .section{
     margin: auto;
