@@ -1,5 +1,5 @@
 'use strict'
-
+//home
 let container = document.querySelector('.container')
 let homeContainer = document.querySelector('.home__container')
 let slide = document.querySelectorAll('.home__slide');
@@ -8,6 +8,25 @@ let currentIdx = 0;
 let leftBtn = document.querySelector('.left__btn')
 let rightBtn = document.querySelector('.right__btn')
 let picInterval=undefined;
+//search
+let searchInput = document.querySelector('.search__input');
+let searchIcon = document.querySelector('.search__i');
+let searchshow = true;
+
+searchIcon.addEventListener('click',()=>{
+    if(searchshow){
+        searchInput.classList.add('show')
+        searchshow= !searchshow
+    }
+    else {
+        searchInput.classList.remove('show')
+        searchshow= !searchshow
+    }
+    
+})
+
+
+
 for(let i=0; i<count; i++){
     slide[i].style.left = i*100 +"%"
     
