@@ -152,8 +152,8 @@ li{
 }
 
 .cake__explanation__img{
-    width: 400px;
-    height: 400px;
+    width: 100vw;
+    height: 100vw;
 }
 
 .cake__explanation{
