@@ -13,7 +13,9 @@
     --color-white: 	#FFFFFF;
 
 }
-
+body{
+font-family: 'Rowdies', cursive;
+}
 li{
     list-style: none;
 }
@@ -69,11 +71,10 @@ li{
 .search::before{
     content: "";
     position: absolute;
+    top: 30px;
     width: 100%;
     height: 4px;
-    top: 30px;
     background-color: black;
-    
 }
 
 .navbar i {
@@ -155,6 +156,50 @@ li{
 }
 
 .cake__explanation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    font-size: 42px;
+}
+
+#bread{
+    margin: 40px;
+}
+
+.bread__menu{
+    display: flex;
+    margin: 32px 0;
+}
+
+.bread__explanation__img{
+    width: 400px;
+    height: 400px;
+}
+
+.bread__explanation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    font-size: 42px;
+}
+
+#coffee{
+    margin: 40px;
+}
+
+.coffee__menu{
+    display: flex;
+    margin: 32px 0;
+}
+
+.coffee__explanation__img{
+    width: 400px;
+    height: 400px;
+}
+
+.coffee__explanation{
     display: flex;
     justify-content: center;
     align-items: center;
