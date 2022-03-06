@@ -104,36 +104,28 @@ li{
 }
 
 .home__container{
-    display: flex;
+    position: absolute;
+    top: 15%;
     align-items: center;
     width: 100%;
     height: 100%;
+    float: left;
 }
 
 .home__slide {
-    margin: 0 12px;
+    margin: 0 10px;
     padding: 0 10px;
-    display: flex;
+    position: absolute;
+    width: 100%;
     overflow: hidden;
-    animation: slide 10s infinite;
+    
 }
 .home__slide img{
-    width: 200px;
-    height: 300px;
+    width: 800px;
+    height: 600px;
     
 }
 
-/* @keyframes slide {
-    0% {margin-left:0;} 
-    10% {margin-left:0;} 
-    25% {margin-left:-20%;} 
-    35% {margin-left:-20%;}
-    50% {margin-left:-30%;}
-    60% {margin-left:-30%;}
-    75% {margin-left:-40%;}
-    85% {margin-left:-40%;}
-    100% {margin-left:0;}
-} */
 
 .section{
     margin: auto;
@@ -148,10 +140,12 @@ li{
 
 #cake{
     background: url(/img/cake_back_img.jpeg)center/cover no-repeat;
-    
-
 }
 
+#cake h1{
+    font-size: 42px;
+    color: var(--color-chocolate);
+}
 .cake__menu{
     display: flex;
     margin: 32px 0;
@@ -168,11 +162,12 @@ li{
     align-items: center;
     padding: 18px;
     font-size: 42px;
-    color: var(--color-Deer_brown);
+    color: white;
     
 }
 
 #bread{
+    background: url(/img/sea\ food\ menu.png);
 }
 
 .bread__menu{
@@ -194,7 +189,7 @@ li{
 }
 
 #coffee{
-    background-color: var(--color-bronze);
+
 }
 
 .coffee__menu{
