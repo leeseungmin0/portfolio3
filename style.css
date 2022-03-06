@@ -10,11 +10,14 @@
     --color-bronze: #CD7F32;
     --color-peru: #CD853F;
     --color-tan: #D2B48C;
+    --color-Deer_brown: #E6BF83;
     
 }
 body{
 font-family: 'Rowdies', cursive;
 }
+
+
 a{
     text-decoration: none;
     color: black;
@@ -133,9 +136,9 @@ li{
 } */
 
 .section{
-    padding: 50px;
-    text-align: center;
     margin: auto;
+    padding: 40px;
+    text-align: center;
 }
 
 .section__container{
@@ -143,9 +146,10 @@ li{
     margin: auto;
 }
 
-
 #cake{
-    margin: 40px;
+    background: url(/img/cake_back_img.jpeg)center/cover no-repeat;
+    
+
 }
 
 .cake__menu{
@@ -164,10 +168,11 @@ li{
     align-items: center;
     padding: 18px;
     font-size: 42px;
+    color: var(--color-Deer_brown);
+    
 }
 
 #bread{
-    margin: 40px;
 }
 
 .bread__menu{
@@ -189,7 +194,7 @@ li{
 }
 
 #coffee{
-    margin: 40px;
+    background-color: var(--color-bronze);
 }
 
 .coffee__menu{
@@ -214,11 +219,10 @@ li{
 #contact{
     padding: 0;
     font-size: 32px;
-    background-color: var(--color-bronze);
 }
 
 #contact a{
-    color: #E6BF83;
+    color: var(--color-Deer_brown);
 }
 
 .contact__rights{
