@@ -174,7 +174,6 @@
   }
   
   .section {
-    margin: 10px;
     padding: 20px;
     text-align: center;
   }
@@ -272,25 +271,45 @@
     border: 10px solid var(--color-tan);
 }
   #coffee {
+    position: relative;
     background: #E1D9D1;
   }
   
+  #coffee h1 {
+    font-size: 72px;
+    color: var(--color-chocolate);
+
+  }
   .coffee__menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin: 32px 0;
   }
   
   .coffee__explanation__img {
-    width: 400px;
+    margin: 20px;
+    padding: 0;
+    width: 450px;
     height: 400px;
+    z-index: 1;
   }
   
   .coffee__explanation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 500px;
     padding: 18px;
     font-size: 42px;
+    color: var(--color-peru);
+  }
+
+  .coffee__inner__box{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 800px;
+    height: 400px;
+    border: 10px solid var(--color-tan);
   }
   
   #contact {
