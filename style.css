@@ -5,6 +5,7 @@
   
   /* color */
   :root {
+    --color-Puce: #7F5A58;
     --color-chocolate: #d2691e;
     --color-bronze: #cd7f32;
     --color-peru: #cd853f;
@@ -12,6 +13,7 @@
     --color-Deer_brown: #e6bf83;
     --color-Cotton: #FBFBF9;
   }
+  
   body {
     font-family: "Rowdies", cursive;
   }
@@ -315,6 +317,7 @@
   #contact {
     padding: 0;
     font-size: 32px;
+    background: var(--color-Puce);
   }
   
   #contact a {
