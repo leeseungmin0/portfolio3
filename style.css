@@ -10,6 +10,7 @@
     --color-peru: #cd853f;
     --color-tan: #d2b48c;
     --color-Deer_brown: #e6bf83;
+    --color-Cotton: #FBFBF9;
   }
   body {
     font-family: "Rowdies", cursive;
@@ -185,7 +186,7 @@
   
   #cake {
     position: relative;
-    background: #FBFBF9;
+    background: var(--color-Cotton);
   }
   
   #cake h1 {
@@ -203,7 +204,7 @@
   .cake__explanation__img {
     margin: 20px;
     padding: 0;
-    width: 500px;
+    width: 450px;
     height: 400px;
     z-index: 1;
   }
@@ -214,40 +215,64 @@
     align-items: center;
     padding: 18px;
     font-size: 42px;
-    color: var(--color-bronze);
+    color: var(--color-peru);
   }
-.inner__box{
+.cake__inner__box{
     position: absolute;
     top: 20%;
-    left: 40%;
+    left: 30%;
     width: 800px;
     height: 400px;
     border: 10px solid var(--color-tan);
   }
   
   #bread {
-    background: url(/img/sea\ food\ menu.png);
+    position: relative;
   }
+
+  #bread h1 {
+    font-size: 72px;
+    color: var(--color-chocolate);
+  }
+
   
   .bread__menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin: 32px 0;
+
   }
   
   .bread__explanation__img {
-    width: 400px;
+    margin: 20px;
+    padding: 0;
+    width: 450px;
     height: 400px;
+    z-index: 1;
   }
   
   .bread__explanation {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 500px;
     padding: 18px;
     font-size: 42px;
+    color: var(--color-peru);
   }
   
+  .bread__inner__box{
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    width: 800px;
+    height: 400px;
+    border: 10px solid var(--color-tan);
+}
   #coffee {
+    background: #E1D9D1;
   }
   
   .coffee__menu {
