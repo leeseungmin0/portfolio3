@@ -60,6 +60,10 @@ function autoSlide(){
     picInterval= setInterval(()=>{
         let nextIdx = (currentIdx+1)%count;
         moveSlide(nextIdx)
+        for(let j=0; j<pageCount; j++){
+            page[j].classList.remove('active');
+        }
+        page[nextIdx].classList.add('active');
         
     },4000)
 }
