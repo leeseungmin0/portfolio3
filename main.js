@@ -76,8 +76,10 @@ container.addEventListener('mouseleave',()=>{
 for(let i=0; i<pageCount; i++){
     page[i].addEventListener('click',(e)=>{
         moveSlide(i)
-        if(e.target === page[i]) e.target.classList.add('active');
-        else e.target.classList.remove('active');
+        for(let j=0; j<pageCount; j++){
+            page[j].classList.remove('active');
+        }
+        e.target.classList.add('active');
         
         
     })
