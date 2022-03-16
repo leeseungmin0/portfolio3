@@ -38,6 +38,37 @@ li {
 .navbar__logo {
   font-size: 30px;
 }
+.navbar__logo h1{
+  position: relative;
+  font-size: 3vw;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar__logo h1::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color:  var(--color-peru);
+  border-right: 4px solid var(--color-peru);
+  overflow: hidden;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+  0%,10%,100%
+  {
+      width: 0;
+  }
+
+  70%,90%
+  {
+      width: 100%;
+  }
+}
 
 .navbar__menu {
   display: flex;
@@ -396,6 +427,8 @@ li {
       top:50%
   }
 }
+
+
 .menu__container:first-child,
 .menu__container:nth-child(4),
 .menu__container:nth-child(7){
