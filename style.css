@@ -472,7 +472,7 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 14px;
+    /* margin: 0 14px; */
   }
   .navbar__menu{
     display: none;
@@ -485,5 +485,77 @@ li {
   .toggle__btn{
     display: block;
     right: 20px;
+  }
+
+  .cake__menu,
+  .coffee__menu{
+    flex-direction: column;
+  }
+  .bread__menu{
+    flex-direction: column-reverse;
+  }
+  .cake__explanation,
+  .bread__explanation,
+  .coffee__explanation{
+    font-size: 32px;
+  }
+  .cake__inner__box,
+  .bread__inner__box,
+  .coffee__inner__box{
+    top: 70%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+  }
+
+  #menu{
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 25vh;
+  }
+  .menu__container:first-child,
+  .menu__container:nth-child(4),
+  .menu__container:nth-child(7){
+    grid-row-start: span 1;
+  }
+
+  .menu__container:nth-child(3),
+  .menu__container:nth-child(8){
+    grid-column-start: span 1;
+  }
+
+  .menu__container:nth-child(4){
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cake__explanation__img,
+  .bread__explanation__img,
+  .coffee__explanation__img{
+    width: 250px;
+    height: 200px;
+  }
+
+  .cake__explanation,
+  .bread__explanation,
+  .coffee__explanation{
+    font-size: 22px;
+  }
+  .cake__inner__box,
+  .bread__inner__box,
+  .coffee__inner__box{
+    width: 400px;
+    height: 250px;
+  }
+
+
+
+
+  #menu {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .menu__container:nth-child(9){
+    grid-column-start: span 2;
   }
 }
