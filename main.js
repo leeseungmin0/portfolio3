@@ -10,7 +10,7 @@ let rightBtn = document.querySelector('.right__btn')
 let picInterval=undefined;
 //search
 let searchInput = document.querySelector('.search__input');
-let searchIcon = document.querySelector('.search__i');
+let searchIcon = document.querySelector('.search__icon');
 let searchshow = true;
 
 
