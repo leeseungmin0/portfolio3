@@ -527,6 +527,9 @@ li {
     grid-column-start: span 1;
     grid-row-start: span 1;
   }
+  .menu__item .text__box{
+    font-size: 2em;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -548,8 +551,6 @@ li {
     width: 400px;
     height: 250px;
   }
-
-
 
 
   #menu {
